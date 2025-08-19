@@ -80,15 +80,15 @@ An interactive tool built with Python and Tkinter that demonstrates 2D convoluti
 
 ## 📋 Preset Filters Included
 
-| Filter | Effect | Kernel |
+| Filter | Effect |  Kernel |
 |--------|---------|---------|
-| **Sharpen** | Enhances edges and details | `[[0,-1,0],[-1,5,-1],[0,-1,0]]` |
-| **Edge Detect** | Highlights object boundaries | `[[-1,-1,-1],[-1,8,-1],[-1,-1,-1]]` |
-| **Blur** | Smooths image details | `[[1,1,1],[1,1,1],[1,1,1]]/9` |
-| **Emboss** | Creates 3D-like effect | `[[-2,-1,0],[-1,1,1],[0,1,2]]` |
-| **Sobel X** | Detects vertical edges | `[[-1,0,1],[-2,0,2],[-1,0,1]]` |
-| **Laplacian** | Edge enhancement | `[[0,1,0],[1,-4,1],[0,1,0]]` |
-| **Identity** | No change (reference) | `[[0,0,0],[0,1,0],[0,0,0]]` |
+| **Sharpen** | Enhances edges and details | $$ \begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end {bmatrix} $$ |
+| **Edge Detect** | Highlights object boundaries | $$ \begin{bmatrix} -1 & -1 & -1 \\ -1 & 8 & -1 \\ -1 & -1 & -1 \end {bmatrix} $$ |
+| **Blur** | Smooths image details |  $$ \frac{1}{9} \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end {bmatrix} $$ |
+| **Emboss** | Creates 3D-like effect | $$ \begin{bmatrix} -2 & 1 & 0 \\ -1 & 1 & 1 \\ 0 & 1 & 2 \end {bmatrix} $$ |
+| **Sobel X** | Detects vertical edges | $$ \begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end {bmatrix} $$ |
+| **Laplacian** | Edge enhancement | $$ \begin{bmatrix} 0 & 1 & 0 \\ 1 & -4 & 1 \\ 0 & 1 & 0 \end {bmatrix} $$ |
+| **Identity** | No change (reference) | $$ \begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end {bmatrix} $$ |
 
 
 ## 🤝 Contributing
